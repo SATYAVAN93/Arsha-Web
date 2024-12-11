@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson Pro:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --orange:#47B2E4;
+    --black:#37517E;
+    --light-color:#fff;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+::-webkit-scrollbar{
+    width:.375rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4{
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: #21365c;
+}
+html{
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    box-shadow: none;
+}
+
+.navbar.active {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.carosul{
+    background-image: linear-gradient(to right, #37517E , #21365c);
+}
+.navbar{
+    background-image: linear-gradient(to right, #37517E , #21365c);
+}
+
+.carosul .images img {
+    animation: upDown 3s infinite;
+}
+
+@keyframes upDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); /* Adjust the distance as needed */
+    }
+}
+
+.illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+}
+.pariatur-architecto{
+    background: #b7cee55f;
+}
+.service-card {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+ }
+  .service-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#services .card-text{
+    font-size: 16px;
+    text-align: left;
+}
+#services .card-title{
+    text-align: left;
+    font-size: 24px;
+    color: #21365c;
+}
+.testimonial-card {
+    border: none;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .testimonial-card .name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .testimonial-card .position {
+    font-size: 0.9em;
+    color: #6c757d;
+  }
+  .testimonial-card .testimonial-text {
+    margin-top: 15px;
+    font-style: italic;
+  }
+
+
+  .image-container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.contact-info {
+    padding: 20px;
+}
+.contact-info p {
+    margin: 10px 0;
+}
+.form-control, .btn {
+    border-radius: 30px;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+}
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #ffffff;
+}
+
